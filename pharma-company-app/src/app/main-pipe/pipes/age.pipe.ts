@@ -11,5 +11,5 @@ export class AgePipe implements PipeTransform {
     let userAge = currentYear-userBirthYear;
 
      return userAge;
-   }
+  }
 }

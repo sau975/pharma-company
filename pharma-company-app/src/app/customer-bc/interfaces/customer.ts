@@ -3,7 +3,7 @@ export interface ICustomer {
   id: number;
   name: string;
   email: string;
-  dob: string;
+  dob: Date;
   medicine: string;
   country: string;
 

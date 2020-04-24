@@ -26,7 +26,7 @@ export class CustomerFormComponent implements OnInit {
     this.location.back();
   }
 
-  add(name: string,email: string,dob: string,medicine: string,country: string): void {
+  add(name: string,email: string,dob: Date,medicine: string,country: string): void {
     name = name.trim();
     if (!name) { return; }
     this.customerService.addCustomer({ name,email,dob,medicine,country } as ICustomer)
