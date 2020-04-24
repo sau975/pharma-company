@@ -10,18 +10,18 @@ export class InMemoryDataService implements InMemoryDbService {
     const customers = [
       {
         id: 1,
-        name: "Odonnell Mcclure",
-        email: "odonnellmcclure@colaire.com",
-        dob: new Date("1980-01-01"),
-        medicine: "Sampson",
-        country: "Poland"
+        name: "Saurav Kumar",
+        email: "saurav97531@gmail.com",
+        dob: new Date("1997-02-02"),
+        medicine: "Lexapro",
+        country: "India"
       },
       {
         id: 2,
         name: "Benton Berry",
         email: "bentonberry@colaire.com",
         dob: new Date("1982-01-01"),
-        medicine: "Sparks",
+        medicine: "Ativan",
         country: "Angola"
       },
       {
@@ -29,7 +29,7 @@ export class InMemoryDataService implements InMemoryDbService {
         name: "Conrad Ochoa",
         email: "conradochoa@colaire.com",
         dob: new Date("1985-01-01"),
-        medicine: "Castro",
+        medicine: "Lyrica",
         country: "Mauritania"
       },
       {
@@ -37,7 +37,7 @@ export class InMemoryDataService implements InMemoryDbService {
         name: "Lorie Rutledge",
         email: "lorierutledge@colaire.com",
         dob: new Date("1993-01-01"),
-        medicine: "Beard",
+        medicine: "Prednisone",
         country: "New Zealand"
       },
       {
@@ -45,7 +45,7 @@ export class InMemoryDataService implements InMemoryDbService {
         name: "Tami Gross",
         email: "tamigross@colaire.com",
         dob: new Date("1997-01-01"),
-        medicine: "Weaver",
+        medicine: "Lorazepam",
         country: "Nauru"
       },
       {
@@ -53,7 +53,7 @@ export class InMemoryDataService implements InMemoryDbService {
         name: "Sally Hanson",
         email: "sallyhanson@colaire.com",
         dob: new Date("2000-01-01"),
-        medicine: "Oliver",
+        medicine: "Adderall",
         country: "Kuwait"
       }
     ];
