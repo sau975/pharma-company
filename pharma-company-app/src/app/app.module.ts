@@ -7,10 +7,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './customer-bc/services/in-memory-data.service';
 import { CustomerBcModule } from './customer-bc/customer-bc.module';
+import { AgePipe } from './pipes/age.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AgePipe
   ],
   imports: [
     BrowserModule,
