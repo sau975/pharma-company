@@ -1,0 +1,42 @@
+<br />
+
+<h5>Add New</h5>  <br />
+
+<div>
+
+  <div class="col-md-6">
+    <label>Name</label>
+    <input class="form-control" #name/>
+  </div>
+
+  <div class="col-md-6">
+    <label>E-mail</label>
+    <input class="form-control" #email/>
+  </div>
+
+  <div class="col-md-6">
+    <label>DOB</label>
+    <input class="form-control" type="date" #dob/>
+  </div>
+
+  <div class="col-md-6">
+    <label>Medicine</label>
+    <input class="form-control" #medicine/>
+  </div>
+
+  <div class="col-md-6">
+    <label>Country</label>
+    <input class="form-control" #country/>
+  </div>  <br />
+
+  <div style="margin-left: 20%;">
+    <a style='margin-right:2px' class="btn btn-secondary btn-sm" (click)="goBack()">
+        Back
+    </a>
+    <button type="submit" class="btn btn-primary btn-sm" (click)="add(name.value,email.value,dob.value,medicine.value,country.value);">
+        Submit
+    </button>
+
+  </div>
+
+</div>

@@ -1,0 +1,44 @@
+<div *ngIf="customer">
+
+  <br />
+
+  <h5>{{customer.name}} Details</h5>  <br />
+
+  <div class="col-md-6">
+    <label>Name</label>
+    <input class="form-control" [(ngModel)]="customer.name" placeholder="name"/>
+  </div>
+
+  <div class="col-md-6">
+    <label>E-mail</label>
+    <input class="form-control" [(ngModel)]="customer.email" placeholder="email"/>
+  </div>
+
+  <div class="col-md-6">
+    <label>DOB</label>
+    <input class="form-control" [(ngModel)]="customer.dob" placeholder="dob"/>
+  </div>
+
+  <div class="col-md-6">
+    <label>Medicine</label>
+    <input class="form-control" [(ngModel)]="customer.medicine" placeholder="medicine"/>
+  </div>
+
+  <div class="col-md-6">
+    <label>Country</label>
+    <input class="form-control" [(ngModel)]="customer.country" placeholder="country"/>
+  </div>
+
+</div>  <br />
+
+<div style="margin-left: 20%;">
+
+  <a style='margin-right:2px' class="btn btn-secondary btn-sm" (click)="goBack()">
+      Back
+  </a>
+
+  <button type="submit" class="btn btn-primary btn-sm" (click)="save()">
+      Update
+  </button>
+
+</div>

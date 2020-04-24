@@ -1,0 +1,27 @@
+<!-- <app-top-menu [menuItem]="menuItem"></app-top-menu> -->
+<app-top-menu></app-top-menu>
+
+<div class="container-fluid" style="position: relative">
+    <div style="position: absolute" >
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <!-- <sidebar-menu [module]="module"></sidebar-menu> -->
+            <br/>
+            <br/>
+            <ul class="list-group">
+
+                <li class="list-group-item" *ngFor="let item of subMenu" [routerLinkActive]="['link-active']">
+                    <a [routerLink]="item.route">
+                        {{item.label}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+</div>
