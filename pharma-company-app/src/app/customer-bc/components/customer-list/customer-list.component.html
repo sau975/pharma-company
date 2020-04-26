@@ -8,13 +8,13 @@
     </a>
 </div>   <br />
 
-<table class="table" *ngIf="customers">
+<table class="table" *ngIf="customers" matSort (matSortChange)="sortData($event)">
 
     <tr>
 
         <th> Name </th>
         <th> E-mail </th>
-        <th> Age </th>
+        <th mat-sort-header="age"> Age </th>
         <th> Medicine </th>
         <th> Country </th>
         <th> Edit / Delete </th>
