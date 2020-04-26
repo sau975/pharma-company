@@ -6,7 +6,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MatSortModule } from '@angular/material/sort';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -20,14 +21,18 @@ import { MatSortModule } from '@angular/material/sort';
     ReactiveFormsModule,
     RouterModule,
     MainPipeModule,
-    MatSortModule
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     MainPipeModule,
-    MatSortModule
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
 })
 export class SharedModule { }

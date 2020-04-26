@@ -2,41 +2,39 @@
 
 <h5>Add New</h5>  <br />
 
-<div>
+<form class="example-form">
 
-  <div class="col-md-6">
-    <label>Name</label>
-    <input class="form-control" #name/>
-  </div>
+  <mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Ex. Saurav Kumar" #name>
+  </mat-form-field>
 
-  <div class="col-md-6">
-    <label>E-mail</label>
-    <input class="form-control" #email/>
-  </div>
+  <mat-form-field class="example-full-width">
+    <mat-label>E-mail</mat-label>
+    <input matInput placeholder="Ex. saurav97531@gmail.com" #email>
+  </mat-form-field>
 
-  <div class="col-md-6">
-    <label>DOB</label>
-    <input class="form-control" type="date" #dob/>
-  </div>
+  <mat-form-field class="example-full-width">
+    <mat-label>DOB</mat-label>
+    <input matInput type="date" #dob>
+  </mat-form-field>
 
-  <div class="col-md-6">
-    <label>Medicine</label>
-    <input class="form-control" #medicine/>
-  </div>
+  <mat-form-field class="example-full-width">
+    <mat-label>Medicine</mat-label>
+    <input matInput placeholder="Ex. Lexapro" #medicine>
+  </mat-form-field>
 
-  <div class="col-md-6">
-    <label>Country</label>
-    <input class="form-control" #country/>
-  </div>  <br />
+  <mat-form-field class="example-full-width">
+    <mat-label>Country</mat-label>
+    <input matInput placeholder="Ex. India" #country>
+  </mat-form-field>
 
-  <div style="margin-left: 20%;">
-    <a style='margin-right:2px' class="btn btn-secondary btn-sm" (click)="goBack()">
-        Back
-    </a>
-    <button type="submit" class="btn btn-primary btn-sm" (click)="add(name.value,email.value,dob.value,medicine.value,country.value);">
-        Submit
-    </button>
+  <div style="margin-left: 40%;">
+
+    <button style='margin-right:2px' class="btn btn-secondary btn-sm" (click)="goBack()">Back</button>
+
+    <button type="submit" class="btn btn-primary btn-sm" (click)="add(name.value,email.value,dob.value,medicine.value,country.value);">Submit</button>
 
   </div>
 
-</div>
+</form>

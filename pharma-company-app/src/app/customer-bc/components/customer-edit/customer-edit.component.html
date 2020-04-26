@@ -1,44 +1,40 @@
-<div *ngIf="customer">
+<br>
 
-  <br />
+<h5>{{customer.name}} Details</h5>  <br />
 
-  <h5>{{customer.name}} Details</h5>  <br />
+<div *ngIf="customer" class="example-form">
 
-  <div class="col-md-6">
-    <label>Name</label>
-    <input class="form-control" [(ngModel)]="customer.name" placeholder="name"/>
+  <mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Ex. Saurav Kumar" [(ngModel)]="customer.name">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>E-mail</mat-label>
+    <input matInput placeholder="Ex. saurav97531@gmail.com" [(ngModel)]="customer.email">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>DOB</mat-label>
+    <input matInput placeholder="Ex. 1997-02-02" [(ngModel)]="customer.dob">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Medicine</mat-label>
+    <input matInput placeholder="Ex. Lexapro" [(ngModel)]="customer.medicine">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Country</mat-label>
+    <input matInput placeholder="Ex. India" [(ngModel)]="customer.country">
+  </mat-form-field>
+
+  <div style="margin-left: 40%;">
+
+    <button style='margin-right:2px' class="btn btn-secondary btn-sm" (click)="goBack()">Back</button>
+
+    <button type="submit" class="btn btn-primary btn-sm" (click)="save()">Update</button>
+
   </div>
-
-  <div class="col-md-6">
-    <label>E-mail</label>
-    <input class="form-control" [(ngModel)]="customer.email" placeholder="email"/>
-  </div>
-
-  <div class="col-md-6">
-    <label>DOB</label>
-    <input class="form-control" [(ngModel)]="customer.dob" placeholder="dob"/>
-  </div>
-
-  <div class="col-md-6">
-    <label>Medicine</label>
-    <input class="form-control" [(ngModel)]="customer.medicine" placeholder="medicine"/>
-  </div>
-
-  <div class="col-md-6">
-    <label>Country</label>
-    <input class="form-control" [(ngModel)]="customer.country" placeholder="country"/>
-  </div>
-
-</div>  <br />
-
-<div style="margin-left: 20%;">
-
-  <a style='margin-right:2px' class="btn btn-secondary btn-sm" (click)="goBack()">
-      Back
-  </a>
-
-  <button type="submit" class="btn btn-primary btn-sm" (click)="save()">
-      Update
-  </button>
 
 </div>
