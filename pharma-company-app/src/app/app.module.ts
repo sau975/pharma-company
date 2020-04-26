@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './customer-bc/services/in-memory-data.service';
 import { CustomerBcModule } from './customer-bc/customer-bc.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CustomerBcModule } from './customer-bc/customer-bc.module';
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
     InMemoryDataService, { dataEncapsulation: false }),
-    CustomerBcModule
+    CustomerBcModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
